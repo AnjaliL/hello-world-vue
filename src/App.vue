@@ -1,27 +1,14 @@
 <template>
-  <div id="app">
-    <h1> Hello, {{ formatName(user) }}! </h1>
-  </div>
+  <div>Hello {{ value }}</div>
 </template>
 
 <script>
 export default {
-  name: 'app',
+  name: "App",
   data() {
     return {
-      user: {
-        firstName: 'Harry',
-        lastName: 'Manchanda'
-      }
+      value: "Anjali L"
     };
-  },
-  methods: {
-    formatName(user) {
-      return `${user.firstName} ${user.lastName}`;
-    }
   }
-}
+};
 </script>
-
-<style lang="scss">
-</style>
